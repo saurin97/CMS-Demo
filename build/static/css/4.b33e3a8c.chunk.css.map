@@ -1,0 +1,1 @@
+{"version":3,"sources":["emptyDataContainer.css"],"names":[],"mappings":"AAAA,oBACC,UAAW,CACX,iBAAkB,CAClB,iBAAkB,CAClB,aAAc,CACd,cACD,CAEA,QACC,aACD","file":"4.b33e3a8c.chunk.css","sourcesContent":[".empty-data-wrapper {\n\twidth: 100%;\n\ttext-align: center;\n\tpadding: 20px 10px;\n\tcolor: #252525;\n\tfont-size: 16px;\n}\n\n.danger {\n\tcolor: crimson;\n}\n"]}
