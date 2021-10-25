@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Button from 'shared/components/form/button';
 import { PbBody, PbCell, PbHead, PbRow, PbTable, TableEmptyContainer, TableSpinner } from 'shared/components/table';
@@ -21,7 +22,7 @@ const CompanyDetailList: React.FC<Props> = (props) => {
 			</PbHead>
 			<PbBody>
 				{props.loading && <TableSpinner colSpan={4} />}
-				{!props.loading && !props.companyDetailList.length && <TableEmptyContainer colSpan={4} text={`No Company content found`} />}
+				{!props.loading && props.companyDetailList.length === 0 && <TableEmptyContainer colSpan={4} text={`No Company content found`} />}
 				{!props.loading && props.companyDetailList.length > 0 && 
                     props.companyDetailList.map((company: any, index: number) => {
                         return (
