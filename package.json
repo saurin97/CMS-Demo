@@ -6,7 +6,7 @@
 		"@babel/runtime": "7.0.0-beta.55",
 		"@date-io/moment": "^1.1.0",
 		"@types/classnames": "^2.2.7",
-		"@types/node": "11.13.7",
+		"@types/node": "^14.10.3",
 		"@types/react": "16.8.14",
 		"@types/react-dom": "16.8.4",
 		"@types/uuid": "^8.3.0",
@@ -56,7 +56,7 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build --max_old_space_size=900",
+		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"lint": "eslint src/**/*.{ts,tsx}"
@@ -79,7 +79,7 @@
 		"husky": "^2.2.0",
 		"lint-staged": "^8.1.6",
 		"mrm": "^1.2.1",
-		"node-sass": "^6.0.1",
+		"node-sass": "^4.14.1",
 		"tslint-config-airbnb": "^5.11.1",
 		"tslint-config-standard": "^8.0.1"
 	},
