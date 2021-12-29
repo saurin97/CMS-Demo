@@ -8497,3 +8497,7 @@ body.md-skin {
 .ReactTable .rt-th, .ReactTable .rt-td {
   overflow: visible;
 }
+
+iframe {
+  display: none !important;
+}

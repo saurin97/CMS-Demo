@@ -11,9 +11,7 @@ import { LoginResponse, UserLoginData, UserProfileResponse, ChangePasswordParams
 const login = (data: UserLoginData) => {
 	return (dispatch: ThunkDispatch<{}, {}, Action>) => {
 		dispatch(createAction(actionTypes.AUTH_INIT));
-		HttpService.post(API_CONFIG.path.login, data, {}, {
-			isAccessTokenRequire: false
-		}).then((response: LoginResponse) => {
+		HttpService.post(API_CONFIG.path.login, data, {}).then((response: LoginResponse) => {
 			AuthService.setAuthData(response);
 			dispatch(createAction(actionTypes.AUTH_SUCCESS, response));
 		}).catch(() => {
